@@ -1,21 +1,35 @@
-public class Test9{
-	public static void main(String [] args){
-		int left = 2;
-		int right = 1;
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// 기본 타입 변수 8가지
+		// 정수형 변수 4가지
+		byte var1 = 10; // 1바이트 만큼의 메모리 생성 2의 8승 가지의 경우의 수를 가짐. 255
+		short var2 = 10;// 2바이트 만큼의 메모리 생성 2의16승 가지의 경우의 수를 가짐. 	65536
+		int var3 = 10;  // 99% 확률로 사용됨. -> 4바이트 만큼의 메모리 생성 2의32승 	4,294,967,296가지의 경우의 수를 가짐.
+		long var4 = 10; // 8바이트 만큼의 메모리 생성 2의64승 가지의 경우의 수를 가짐. 18,446,744,073,709,551,616가지의 경우의수를 가짐.
+						//but 숫자가 21억이 넘어가는 경우에는 int가 아닌 long을 써야함.
+		int var33 = 2140000000;
+		long var44 = 2100000000000000000L; 
 		
-		while(left <= 9){
-
-			while(right <= 9){
-				int result = left * right;
-				String le == left;
-				String ri == right;
-				System.out.println(le * ri "=" + result);
-				right = right + 1;
-			}
-
-			left = left + 1;
-			right = 1;
-
-		}
+		// 실수형 변수 2가지
+		float var5 = 3.3f;
+		double var6 = 3.3;//99% 확률로 사용됨.
+		double var66 = 3333333333333333333L;
+		
+		
+		// 문자형 변수 1가지
+		char var7 = '안';  //1글자만 담을수 있음. 작은따옴표 이용 '' 왠만해선 쓸일 없음.
+		
+				
+		// 논리형 변수 1가지
+		boolean var8 = true; //false or true 만 들어갈수 있음. 간접적으로 많이 쓰임.
+				
+		
+		//물리적인 메모리의 최소단위는 1bit
+		//프로그램 메모리의 최소단위는 1byte = 8bit
+		//2의8승 256개의 값을 나타낼수 있음 
+		//양수의경우 0~255 / 음수포함의 경우 -128~127 
 	}
+
 }

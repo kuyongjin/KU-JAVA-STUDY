@@ -1,20 +1,17 @@
-import java.util.Scanner;
 
-public class Test6{
-	public static void main(String [] args){
-		Scanner scn = new Scanner(System.in);
+public class Test6 {
 
-		System.out.println("input score.. plz..");
-		String inputValue = scn.nextLine();
-		int score = Integer.parseInt(inputValue);
-		
-		if(score >= 90){
-			System.out.println(" A ");
-		}else if(score>=80){
-			System.out.println(" B ");
-		}else{
-			System.out.println(" F ");
-		}
-		System.out.println("bye~");		
-	}	
+	public static void main(String[] args) {
+	
+		{	
+			int aaa = 10;
+		 	System.out.println(aaa);
+	    } //컴파일러는 중괄호 내에서 실행한 변수를
+		  //중괄호가 끝날때 소멸 시킨다. 
+
+	 	int aaa = 10;
+	 	System.out.println(aaa);
+	
+	}
+
 }

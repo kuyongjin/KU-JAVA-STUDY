@@ -1,21 +1,19 @@
-import java.util.Scanner;
 
+public class Test5 {
 
-public class Test5{
-	public static void main(String [] args){
-		//.....
-		Scanner scn = new Scanner(System.in);
-		System.out.println("how much???");
-		String inputValue = scn.nextLine();
-		int test = Integer.parseInt(inputValue);
-			
-		int count = 0;
-		while(count < test){
-			System.out.println("hello-");
-			System.out.println("welcome-");
-			count = count + 1;
-		}
+	public static void main(String[] args) {
 		
-		System.out.println("bye~");
+		int aaa = 10;
+		int bbb = 10;
+		
+		System.out.println(aaa);
+		System.out.println(bbb);
+		
+		aaa = 20;
+		bbb = 20;
+		
+		System.out.println(aaa);
+		System.out.println(bbb);
 	}
+
 }
