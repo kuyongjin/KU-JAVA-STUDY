@@ -3,24 +3,21 @@ public class Test04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// 부호연산자...
+		// if문안에 else문 else문안에 if문이 들어갈수 있다!
+		int value1 = 7;
 		
-		
-		int aaa1 = 1;
-		System.out.println(aaa1);
-		
-		aaa1 = -aaa1; 
-		System.out.println(aaa1);
-		
-		aaa1 = -aaa1;
-		System.out.println(aaa1);
-		
-		//이런 문법은 왜 존재하는거지?? - 쓸일은 없으나 마이너스에 대한 정의를 내려주는 문법임.
-		int aaa2 = -2;
-		aaa2 = +aaa2;
-		System.out.println(aaa2);
-				
-		
+		if(value1 > 10) {
+			System.out.println("10보다 큽니다.");
+		}else {
+			if(value1 > 5) {
+				System.out.println("10보다는 크지 않고 5보다 큽니다.");
+			}else {
+				if(value1 > 3) {
+					System.out.println("10보다 크지않고 5보다 크지않고 3보다는 큽니다.");
+				}else {
+					System.out.println("이도저도 아닙니다.");
+				}
+			}
+		}
 	}
-
 }

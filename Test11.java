@@ -3,16 +3,22 @@ public class Test11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// 1부터 100까지의 합을 구해보자
 		
-		int a = 205;
-		int b = 904;
+		int sum = 0;
 		
-		
-		System.out.println(a + " + " + b + " = " + (a + b));
-		System.out.println("결과 : " + a + " 더하기 " + b + " 는 " + (a + b) + " 입니다. ");
-		
-		
-
+		for(int i = 1 ; i <= 100 ; i++ ) {
+		sum += i;
+				
+		}
+		System.out.println("총합 : " + sum);
+	
+		for(int i = 1 ; i <= 100 ; i++) {
+			if(i%3==0) {
+				continue;
+				
+			}	
+			
+		}
 	}
-
 }
