@@ -2,18 +2,24 @@
 public class Test01 {
 
 	public static void main(String[] args) {
-		//if문 문법....
+		// TODO Auto-generated method stub
+		int [] list = new int[5];
+		list[0] = 10;
+		list[1] = 30;
+		list[2] = 20;
+		list[3] = 0;
+		list[4] = 70;
+	
+//		//리스트의 반복 - 고전적 for문 활용 - 특수한 경우에만 사용.
+//		for(int i = 0; i < list.length; i++) {
+//			System.out.println(list[i]);
+			
+		//리스트의 반복 - 향상된 for문 (foreach문) 활용 // 제어할수는 없으나 일반적으로 사용됨.
+		for(int xxxxxxx:list) { //좌측에는 변수 : 어래이 OR 리스트를 넣어주면 됨.
+			System.out.println(xxxxxxx);
+			
 		
-		int value1 = 7;
-		
-		if(value1 > 10) {
-			//이부분이 조건이 성립(true)되면 스코프 안쪽이 실행됨. false 가되면 스코프 안쪽은 실행이 되지 않는다.
-			System.out.println("Value는 7보다 큽니다.");
-			System.out.println("!!!!!!!!!!!!!!!!!!");
 		}
-		
-		if(value1 == 7) System.out.println("value는 7입니다.");
-			//중괄호 생략이 가능한 경우는 딱 한가지 - 안쪽에 있는 소스코드가 단 1줄일때만 영향을 받지 않음.
-		System.out.println("종료");
 	}
+
 }
